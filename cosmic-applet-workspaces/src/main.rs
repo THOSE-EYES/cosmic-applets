@@ -4,6 +4,8 @@
 const VERSION: &str = env!("CARGO_PKG_VERSION");
 
 fn main() -> cosmic::iced::Result {
+    eprintln!(">>> TOUCHSCREEN FIX ACTIVE <<<");
+
     tracing_subscriber::fmt::init();
     let _ = tracing_log::LogTracer::init();
 
